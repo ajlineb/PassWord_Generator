@@ -106,28 +106,28 @@ function generatePassword() {
 
       function lowerCaseCheck (value) {
         if (finalPassWord.includes(value)) {
-          console.log("it worked for lower");
+          //console.log("it worked for lower");
           isTrueLowerCheck = true;
         }
       }
 
       function upperCaseCheck (value) {
         if (finalPassWord.includes(value)) {
-          console.log("it worked for upper");
+          //console.log("it worked for upper");
           isTrueUpperCheck = true;
         }
       }
 
       function specialCaseCheck (value) {
         if (finalPassWord.includes(value)) {
-          console.log("it worked for special");
+          //console.log("it worked for special");
           isTrueSpecialCaseCheck = true;
         }
       }
 
       function numberCheck (value) {
         if (finalPassWord.includes(value)) {
-          console.log("it worked for num");
+          //console.log("it worked for num");
           isTrueNumberCaseCheck = true;
         }
       }
@@ -162,21 +162,21 @@ function generatePassword() {
 
       function lowerCaseCheck (value) {
         if (finalPassWord.includes(value)) {
-          console.log("it worked for lower");
+          //console.log("it worked for lower");
           isTrueLowerCheck = true;
         }
       }
 
       function upperCaseCheck (value) {
         if (finalPassWord.includes(value)) {
-          console.log("it worked for upper");
+         //console.log("it worked for upper");
           isTrueUpperCheck = true;
         }
       }
 
       function specialCaseCheck (value) {
         if (finalPassWord.includes(value)) {
-          console.log("it worked for special");
+          //console.log("it worked for special");
           isTrueSpecialCaseCheck = true;
         }
       }
@@ -206,21 +206,21 @@ function generatePassword() {
 
       function upperCaseCheck (value) {
         if (finalPassWord.includes(value)) {
-          console.log("it worked for upper");
+          //console.log("it worked for upper");
           isTrueUpperCheck = true;
         }
       }
 
       function specialCaseCheck (value) {
         if (finalPassWord.includes(value)) {
-          console.log("it worked for special");
+          //console.log("it worked for special");
           isTrueSpecialCaseCheck = true;
         }
       }
 
       function numberCheck (value) {
         if (finalPassWord.includes(value)) {
-          console.log("it worked for num");
+          //console.log("it worked for num");
           isTrueNumberCaseCheck = true;
         }
       }
@@ -250,20 +250,20 @@ function generatePassword() {
 
       function lowerCaseCheck (value) {
         if (finalPassWord.includes(value)) {
-          console.log("it worked for lower");
+          //console.log("it worked for lower");
           isTrueLowerCheck = true;
         }
       }
       function specialCaseCheck (value) {
         if (finalPassWord.includes(value)) {
-          console.log("it worked for special");
+         //console.log("it worked for special");
           isTrueSpecialCaseCheck = true;
         }
       }
 
       function numberCheck (value) {
         if (finalPassWord.includes(value)) {
-          console.log("it worked for num");
+          //console.log("it worked for num");
           isTrueNumberCaseCheck = true;
         }
       }
@@ -291,20 +291,20 @@ function generatePassword() {
 
       function lowerCaseCheck (value) {
         if (finalPassWord.includes(value)) {
-          console.log("it worked for lower");
+          //console.log("it worked for lower");
           isTrueLowerCheck = true;
         }
       }
 
       function upperCaseCheck (value) {
         if (finalPassWord.includes(value)) {
-          console.log("it worked for upper");
+          //console.log("it worked for upper");
           isTrueUpperCheck = true;
         }
       }
       function numberCheck (value) {
         if (finalPassWord.includes(value)) {
-          console.log("it worked for num");
+          //console.log("it worked for num");
           isTrueNumberCaseCheck = true;
         }
       }
@@ -326,7 +326,7 @@ function generatePassword() {
       return finalPassWord;
     }
 
-    console.log(finalPassWord);
+    //console.log(finalPassWord);
     return finalPassWord;
   }
   finalPassWord = combine();
