@@ -2,7 +2,7 @@
 
 ## Description
 
-A password generator! This webpage is designed to create new passwords revolving aroudn certain criteria.  
+A password generator! This webpage is designed to create new passwords revolving around certain criteria.  
 
 At the begining of pressing the genrate password button, there will be screen prompts asking certain questions. The first question is how long or how many characters long the password should be. The next question is wether it should contain lower case characters, then if it should have upper case letters, special characters, and then numbers. If the user does not choose a valid length they will be prompted to try again, if the user does not accept any criteria, they will be propmted to have at least one type of character.  
 
