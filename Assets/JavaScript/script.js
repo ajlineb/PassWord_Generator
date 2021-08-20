@@ -30,7 +30,7 @@ function generatePassword() {
     } else if (length === null) {
       alert("Cancelled")
       isNum = false;
-      return;
+      return finalPassWord = "No PassWord Generated!";
     } else {
       alert("Not Valid!");
     };
@@ -96,26 +96,255 @@ function generatePassword() {
       randomArray = characterList[Math.floor(Math.random()*characterList.length)];
       
       //puts in a random character from the random array into the final password
-      finalPassWord += randomArray[Math.floor(Math.random()*randomArray.length)];
+      finalPassWord += (randomArray[Math.floor(Math.random()*randomArray.length)]);
       
     }
+    
+
+    // if all characters were chosen
+    if (isLowerCase === true && isUpperCase === true && isSpecialCharacter === true && isNumeric === true) {
+      var isTrueLowerCheck = false;
+      var isTrueUpperCheck = false;
+      var isTrueSpecialCaseCheck = false;
+      var isTrueNumberCaseCheck = false;
+
+      function lowerCaseCheck (value) {
+        if (finalPassWord.includes(value)) {
+          console.log("it worked for lower");
+          isTrueLowerCheck = true;
+        }
+      }
+
+      function upperCaseCheck (value) {
+        if (finalPassWord.includes(value)) {
+          console.log("it worked for upper");
+          isTrueUpperCheck = true;
+        }
+      }
+
+      function specialCaseCheck (value) {
+        if (finalPassWord.includes(value)) {
+          console.log("it worked for special");
+          isTrueSpecialCaseCheck = true;
+        }
+      }
+
+      function numberCheck (value) {
+        if (finalPassWord.includes(value)) {
+          console.log("it worked for num");
+          isTrueNumberCaseCheck = true;
+        }
+      }
+
+
+      for (let i=0; i<lowerCase.length; i++) {
+        lowerCaseCheck(lowerCase[i]);
+      }
+
+      for (let i=0; i<upperCase.length; i++) {
+        upperCaseCheck(upperCase[i]);
+      }
+
+      for (let i=0; i<specialCharacter.length; i++) {
+        specialCaseCheck(specialCharacter[i]);
+      }
+
+      for (let i=0; i<number.length; i++) {
+        numberCheck(number[i]);
+      }
+
+      if (isTrueLowerCheck === false || isTrueUpperCheck === false || isTrueSpecialCaseCheck === false || isTrueNumberCaseCheck === false) {
+        combine();
+      }
+      return finalPassWord;
+    }
+    // if lowercase, uppercase, and special character are chosen
+    if(isLowerCase === true && isUpperCase === true && isSpecialCharacter === true && isNumeric === false) {
+      var isTrueLowerCheck = false;
+      var isTrueUpperCheck = false;
+      var isTrueSpecialCaseCheck = false;
+
+      function lowerCaseCheck (value) {
+        if (finalPassWord.includes(value)) {
+          console.log("it worked for lower");
+          isTrueLowerCheck = true;
+        }
+      }
+
+      function upperCaseCheck (value) {
+        if (finalPassWord.includes(value)) {
+          console.log("it worked for upper");
+          isTrueUpperCheck = true;
+        }
+      }
+
+      function specialCaseCheck (value) {
+        if (finalPassWord.includes(value)) {
+          console.log("it worked for special");
+          isTrueSpecialCaseCheck = true;
+        }
+      }
+
+      for (let i=0; i<lowerCase.length; i++) {
+        lowerCaseCheck(lowerCase[i]);
+      }
+
+      for (let i=0; i<upperCase.length; i++) {
+        upperCaseCheck(upperCase[i]);
+      }
+
+      for (let i=0; i<specialCharacter.length; i++) {
+        specialCaseCheck(specialCharacter[i]);
+      }
+
+      if (isTrueLowerCheck === false || isTrueUpperCheck === false || isTrueSpecialCaseCheck === false){
+        combine();
+      }
+      return finalPassWord;
+    }
+    // if uppercase, special, and numbers are chosen
+    if(isUpperCase === true && isSpecialCharacter === true && isNumeric === true && isLowerCase === false) {
+      var isTrueUpperCheck = false;
+      var isTrueSpecialCaseCheck = false;
+      var isTrueNumberCaseCheck = false;
+
+      function upperCaseCheck (value) {
+        if (finalPassWord.includes(value)) {
+          console.log("it worked for upper");
+          isTrueUpperCheck = true;
+        }
+      }
+
+      function specialCaseCheck (value) {
+        if (finalPassWord.includes(value)) {
+          console.log("it worked for special");
+          isTrueSpecialCaseCheck = true;
+        }
+      }
+
+      function numberCheck (value) {
+        if (finalPassWord.includes(value)) {
+          console.log("it worked for num");
+          isTrueNumberCaseCheck = true;
+        }
+      }
+
+      for (let i=0; i<upperCase.length; i++) {
+        upperCaseCheck(upperCase[i]);
+      }
+
+      for (let i=0; i<specialCharacter.length; i++) {
+        specialCaseCheck(specialCharacter[i]);
+      }
+
+      for (let i=0; i<number.length; i++) {
+        numberCheck(number[i]);
+      }
+
+      if (isTrueUpperCheck === false || isTrueSpecialCaseCheck === false || isTrueNumberCaseCheck === false) {
+        combine();
+      }
+      return finalPassWord;
+    }
+    // if lowercase, special, and number are chosen
+    if(isLowerCase === true && isSpecialCharacter == true && isNumeric === true && isUpperCase === false) {
+      var isTrueLowerCheck = false;
+      var isTrueSpecialCaseCheck = false;
+      var isTrueNumberCaseCheck = false;
+
+      function lowerCaseCheck (value) {
+        if (finalPassWord.includes(value)) {
+          console.log("it worked for lower");
+          isTrueLowerCheck = true;
+        }
+      }
+      function specialCaseCheck (value) {
+        if (finalPassWord.includes(value)) {
+          console.log("it worked for special");
+          isTrueSpecialCaseCheck = true;
+        }
+      }
+
+      function numberCheck (value) {
+        if (finalPassWord.includes(value)) {
+          console.log("it worked for num");
+          isTrueNumberCaseCheck = true;
+        }
+      }
+
+      for (let i=0; i<lowerCase.length; i++) {
+        lowerCaseCheck(lowerCase[i]);
+      }
+      for (let i=0; i<specialCharacter.length; i++) {
+        specialCaseCheck(specialCharacter[i]);
+      }
+
+      for (let i=0; i<number.length; i++) {
+        numberCheck(number[i]);
+      }
+      if (isTrueLowerCheck === false || isTrueSpecialCaseCheck === false || isTrueNumberCaseCheck === false) {
+        combine();
+      }
+      return finalPassWord;
+    }
+    // if lowercase, uppercase, and numbers are chosen
+    if(isLowerCase === true && isUpperCase === true && isNumeric === true && isSpecialCharacter === false) {
+      var isTrueLowerCheck = false;
+      var isTrueUpperCheck = false;
+      var isTrueNumberCaseCheck = false;
+
+      function lowerCaseCheck (value) {
+        if (finalPassWord.includes(value)) {
+          console.log("it worked for lower");
+          isTrueLowerCheck = true;
+        }
+      }
+
+      function upperCaseCheck (value) {
+        if (finalPassWord.includes(value)) {
+          console.log("it worked for upper");
+          isTrueUpperCheck = true;
+        }
+      }
+      function numberCheck (value) {
+        if (finalPassWord.includes(value)) {
+          console.log("it worked for num");
+          isTrueNumberCaseCheck = true;
+        }
+      }
+
+      for (let i=0; i<lowerCase.length; i++) {
+        lowerCaseCheck(lowerCase[i]);
+      }
+
+      for (let i=0; i<upperCase.length; i++) {
+        upperCaseCheck(upperCase[i]);
+      }
+      for (let i=0; i<number.length; i++) {
+        numberCheck(number[i]);
+      }
+
+      if (isTrueLowerCheck === false || isTrueUpperCheck === false || isTrueNumberCaseCheck === false) {
+        combine();
+      }
+      return finalPassWord;
+    }
+
     console.log(finalPassWord);
     return finalPassWord;
   }
-
+  finalPassWord = combine();
+  return finalPassWord;
 };
-
-
-
 
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
-
   passwordText.value = password;
-
+ 
 }
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+
